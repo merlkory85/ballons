@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800&display=swap');
+
+html,
+body {
+    height: 100%;
+    font-family: $font-main;
+    background-color: $white;
+    padding: 15px;
+    color: $main;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+body {
+    &.lock {
+        overflow: hidden;
+    }
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: $wrapper;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.page {
+    flex: 1 1 auto;
+}
