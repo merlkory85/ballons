@@ -349,7 +349,7 @@ body.lock {
 }
 .btn--animated {
   backface-visibility: hidden;
-  animation: btnToUp 0.5s ease-out 0.7s;
+  animation: btnToUp 0.7s ease-out 1.5s;
   animation-fill-mode: backwards;
 }
 

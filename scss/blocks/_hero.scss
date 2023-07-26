@@ -93,7 +93,7 @@
 
     &--animated {
         backface-visibility: hidden;
-        animation: btnToUp .5s ease-out .7s;
+        animation: btnToUp .7s ease-out 1.5s;
         animation-fill-mode: backwards;
     }
 }
