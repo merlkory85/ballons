@@ -1,7 +1,12 @@
+// Abstracts
+@import "./abstacts/variables";
+@import "./abstacts/mixins";
+@import "./abstacts/functions";
+
 // Base
 @import "./base/reset";
-@import "./base/vars";
 @import "./base/base";
+@import "./base/animations";
 
 // Blocks
 @import "./blocks/header";

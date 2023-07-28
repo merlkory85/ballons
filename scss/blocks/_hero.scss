@@ -8,7 +8,7 @@
     padding-top: 240px;
     padding-bottom: 290px;
     background:
-        linear-gradient(90deg, rgba(186, 133, 84, 0.70) 0%, rgba(1, 1, 1, 0.70) 100%),
+        linear-gradient(90deg, rgba($brown-color-light, 0.7) 0.03%, rgba($dark, 0.7) 100%),
         url('../image/hero-bg.jpg') center / cover no-repeat;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
 }
@@ -46,16 +46,12 @@
 }
 
 .btn {
-
     &:link,
     &:visited {
-        display: inline-block;
+        @include style-link($color-gray);
         position: relative;
-        text-transform: uppercase;
-        text-decoration: none;
         font-size: 20px;
         font-weight: 600;
-        color: $main;
         padding: 15px 40px;
         background-color: $white;
         border-radius: 50px;
@@ -64,7 +60,7 @@
 
     &:hover {
         transform: translateY(-4px);
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+        box-shadow: $box-shadow;
 
         &::after {
             opacity: 0;
@@ -74,7 +70,7 @@
 
     &:active {
         transform: translateY(-2px);
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: $box-shadow;
     }
 
     &::after {
@@ -97,63 +93,3 @@
         animation-fill-mode: backwards;
     }
 }
-
-@keyframes btnToUp {
-    0% {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
-@keyframes leftToRight {
-    0% {
-        opacity: 0;
-        transform: translateX(-200px);
-    }
-
-    80% {
-        transform: translateX(20px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-@keyframes rightToLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(200px);
-    }
-
-    80% {
-        transform: translateX(-20px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-// @keyframes bottomToUp {
-//     0% {
-//         opacity: 0;
-//         transform: scale(0);
-//     }
-
-//     80% {
-//         transform: scale(1.1);
-//     }
-
-//     100% {
-//         opacity: 1;
-//         transform: scale(1);
-//     }
-// }
